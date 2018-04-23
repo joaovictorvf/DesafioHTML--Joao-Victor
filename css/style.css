@@ -32,6 +32,12 @@ a.link{
 	box-shadow: 0 2px 2px 0 rgba(255,255,255,0.0);
 }
 
+a.divLink{
+color:white;
+font-weight: bold;
+text-decoration: none;
+}
+
 
 
 .menu2{
@@ -83,6 +89,11 @@ header{
 	padding-right:25px;
 	padding-bottom:15px;
 }
+
+/*#lado1:hover{
+	background:#ff0; 
+	color:#f00;
+}*/
 
 #lado2{
 	display:inline-block;
@@ -217,6 +228,19 @@ background-color:#db4dff;
 	background-color:#db4dff;
 }
 
+#estuda2{
+	background-color:#db4dff;
+}
+
+#estuda3{
+	background-color:#db4dff;
+}
+
+#estuda4{
+	background-color:#db4dff;
+}
+
+
 .vmais{
 border-radius: 6px;
 text-align: center;
@@ -229,6 +253,33 @@ background-color: black;
 margin-bottom: 10px;
 }
 
+.divVmais{
+border-radius: 6px;
+text-align: center;
+padding-top: 5px;
+padding-bottom: 5px;
+margin-right: 580px;
+margin-left: 580px;
+color:;
+background-color:#ff5c33;
+margin-bottom: 10px;
+box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.8)
+}
+
+.divVmais1{
+border-radius: 6px;
+text-align: center;
+padding-top: 5px;
+padding-bottom: 5px;
+margin-right: 580px;
+margin-left: 580px;
+color:;
+background-color:#bf4080;
+margin-bottom: 10px;
+box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.8)
+}
+
+
 .ruby1{
 font-size: 30px;
 letter-spacing: 8px;
@@ -236,7 +287,7 @@ word-spacing: 8px;
 display: inline-block;
 position: absolute;
 margin-left: 450px;
-color:#bf4080
+color:#bf4080;
 }
 
 .meunome{

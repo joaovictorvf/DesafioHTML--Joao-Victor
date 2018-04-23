@@ -8,19 +8,47 @@
       <meta name="author" content="Gti Engenharia Jr" />
       <title> GTi - Empresa Junior - Joao Victor</title>
       <link href="css/style.css" rel="stylesheet">
+      <link href="css/styleteste.css" rel="stylesheet">
       <link rel="icon" href="images/ico.png">
+      <title>Alerta</title>
+      <meta charset=“utf-8”>
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" rel="stylesheet">
+      <!--MEU CSS-->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- BIBLIOTECA JQUERY -->
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <!-- BIBLIOTECA JQUERY UI -->
+      <script src="js/jquery-ui.js"></script>
+      <!-- BIBLIOTECA TOASTR (notificacao personalizada) -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.js"></script>
+      <!--MEU JS-->
+      <script type="text/javascript" src="js/script.js"></script>
    </head>
    <body>
+      <div id="alerta" hidden="">
+         <div class="title">Receba Nossas Novidades <i class="fa fa-times" id = "X"></i></div>
+         <div class="body">
+            <form id="novidadesform" name="contact-form" method="POST" >
+               <label>e-mail:</label>
+               <input type="text" name="email" placeholder="digite seu email">
+               <button type="submit" id = "butt">Enviar</button>
+            </form>
+            <div class="resultado"></div>
+         </div>
+      </div>
+      <div id="contador"></div>
       <nav class="nav1">
          <div class= "menu1">
             <img src= "images/logo.png">
          </div>
          <div class = "menu2">
             <ul>
-               <li class="lt"><a class="link1" href=""> Início </a></li>
-               <li class="lt"><a class="link1" href=""> Categorias </a></li>
-               <li class="lt"><a class="link1" href=""> Blog </a></li>
-               <li class="lt"><a class="link1" href=""> Membros </a></li>
+               <li class="lt"><a class="link1" id="link11" href=""> Início </a></li>
+               <li class="lt"><a class="link1" id="link12" href=""> Categorias </a></li>
+               <li class="lt"><a class="link1" id="link13" href=""> Blog </a></li>
+               <li class="lt"><a class="link1" id="link14" href=""> Membros </a></li>
             </ul>
          </div>
       </nav>
@@ -87,7 +115,7 @@
             <div class = "inf">
                <div class = "postado"> Postado dia 04/08/2017 </div>
                <br>
-               <div class = "estuda"> <a class ="link" href=""> ESTUDAR AGORA </a> </div>
+               <div class = "estuda"> <a class ="link" id="link21" href=""> ESTUDAR AGORA </a> </div>
             </div>
          </div>
          <div class = "bloco1">
@@ -102,7 +130,7 @@
             <div class = "inf">
                <div class = "postado"> Postado dia 04/08/2017 </div>
                <br>
-               <div class = "estuda"> <a class ="link" href=""> ESTUDAR AGORA </a> </div>
+               <div class = "estuda"> <a class ="link" id="link22" href=""> ESTUDAR AGORA </a> </div>
             </div>
          </div>
          <div class = "bloco1" id="bloco3">
@@ -117,7 +145,7 @@
             <div class = "inf">
                <div class = "postado"> Postado dia 02/04/2018 </div>
                <br>
-               <div class = "estuda"> <a class ="link" href=""> ESTUDAR AGORA </a> </div>
+               <div class = "estuda"> <a class ="link" id="link23" href=""> ESTUDAR AGORA </a> </div>
             </div>
          </div>
          <div class = "bloco1" id="bloco4">
@@ -132,13 +160,13 @@
             <div class = "inf">
                <div class = "postado"> Postado dia 02/04/2018 </div>
                <br>
-               <div class = "estuda"> <a class ="link" href=""> ESTUDAR AGORA </a> </div>
+               <div class = "estuda"> <a class ="link" id="link24" href=""> ESTUDAR AGORA </a> </div>
             </div>
          </div>
          <br>
          <br>
          <br>
-         <div class="vmais">
+         <div class="vmais" id ="vmais1">
             <a class ="link" href=""> VER + </a>
          </div>
       </section>
@@ -167,7 +195,7 @@
             <div class = "inf">
                <div class = "postado"> Postado dia 02/04/2018 </div>
                <br>
-               <div class = "estuda" id = "estuda1"> <a class ="link" href=""> ESTUDAR AGORA </a> </div>
+               <div class = "estuda" id = "estuda1" id="link31"> <a class ="link" href=""> ESTUDAR AGORA </a> </div>
             </div>
          </div>
          <div class = "bloco1" id="bloco6">
@@ -182,7 +210,7 @@
             <div class = "inf">
                <div class = "postado"> Postado dia 02/04/2018 </div>
                <br>
-               <div class = "estuda" id = "estuda1"> <a class ="link" href=""> ESTUDAR AGORA </a> </div>
+               <div class = "estuda" id = "estuda2" id ="link32"> <a class ="link" href=""> ESTUDAR AGORA </a> </div>
             </div>
          </div>
          <div class = "bloco1" id="bloco7">
@@ -197,7 +225,7 @@
             <div class = "inf">
                <div class = "postado"> Postado dia 02/04/2018 </div>
                <br>
-               <div class = "estuda" id = "estuda1"> <a class ="link" href=""> ESTUDAR AGORA </a> </div>
+               <div class = "estuda" id = "estuda3" id="link33"> <a class ="link" href=""> ESTUDAR AGORA </a> </div>
             </div>
          </div>
          <div class = "bloco1" id="bloco8">
@@ -212,13 +240,13 @@
             <div class = "inf">
                <div class = "postado"> Postado dia 02/04/2018 </div>
                <br>
-               <div class = "estuda" id = "estuda1"> <a class ="link" href=""> ESTUDAR AGORA </a> </div>
+               <div class = "estuda" id = "estuda4" id="link34"> <a class ="link" href=""> ESTUDAR AGORA </a> </div>
             </div>
          </div>
          <br>
          <br>
          <br>
-         <div class="vmais">
+         <div class="vmais" id= "vmais2">
             <a class ="link" href=""> VER + </a>
          </div>
       </section>
